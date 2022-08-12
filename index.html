@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Mis compras</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <h1>Carrito de compras</h1>
+
+      <div class="contenedorHijo">
+        <input type="text" id="producto" placeholder="Producto" />
+      </div>
+      <div class="contenedorHijo">
+        <input type="number" id="precio" placeholder="Precio" />
+      </div>
+      <div class="contenedorHijo">
+        <button id="btn-agregar">Agregar al carrito</button>
+
+        <button id="btn-calcular">Calcular total</button>
+      </div>
+
+      <p>Lista de compras</p>
+      <ul class="lista" id="lista"></ul>
+
+      <h3>Total: $ <span id="total"></span></h3>
+      <div class="contenedorHijo">
+        <button id="vaciar">Vaciar carrito</button>
+      </div>
+    </div>
+    <script src="src/index.ts"></script>
+  </body>
+</html>
